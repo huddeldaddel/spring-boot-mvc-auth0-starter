@@ -18,16 +18,10 @@ class LogoutController(config: Auth0Config) {
     @RequestMapping(value = ["/logout"], method = [RequestMethod.GET])
     protected fun logout(req: HttpServletRequest): String {
         logger.debug("Performing logout")
-        invalidateSession(req)
+        req.session?.invalidate()
         val returnTo = req.scheme + "://" + req.serverName + ":" + req.serverPort
         val logoutUrl = String.format("https://%s/v2/logout?client_id=%s&returnTo=%s", domain, clientId, returnTo)
         return "redirect:$logoutUrl"
-    }
-
-    private fun invalidateSession(request: HttpServletRequest) {
-        if (request.session != null) {
-            request.session.invalidate()
-        }
     }
 
 }

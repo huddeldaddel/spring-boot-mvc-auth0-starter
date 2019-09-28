@@ -10,8 +10,7 @@ import java.io.IOException
 class Auth0Filter : Filter {
 
     @Throws(ServletException::class)
-    override fun init(filterConfig: FilterConfig?) {
-    }
+    override fun init(filterConfig: FilterConfig?) { }
 
     @Throws(IOException::class, ServletException::class)
     override fun doFilter(request: ServletRequest, response: ServletResponse, next: FilterChain) {

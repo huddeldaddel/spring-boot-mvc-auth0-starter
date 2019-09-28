@@ -4,6 +4,7 @@ import com.auth0.IdentityVerificationException
 import com.auth0.SessionUtils
 import com.auth0.Tokens
 import de.huddeldaddel.mjournal.controllers.AuthController
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Controller
@@ -18,6 +19,7 @@ import java.io.IOException
 @Controller
 class CallbackController(private val controller: AuthController) {
 
+    private val logger = LoggerFactory.getLogger(this.javaClass)
     private val redirectOnFail: String = "/login"
     private val redirectOnSuccess = "/journal/home"
 
@@ -39,12 +41,12 @@ class CallbackController(private val controller: AuthController) {
             val tokens = controller.handle(req)
             SessionUtils.set(req, "accessToken", tokens.accessToken)
             SessionUtils.set(req, "idToken", tokens.idToken)
+            logger.debug("tokens: $tokens")
             res.sendRedirect(redirectOnSuccess)
         } catch (e: IdentityVerificationException) {
-            e.printStackTrace()
+            logger.warn("Failed to verify identity", e)
             res.sendRedirect(redirectOnFail)
         }
-
     }
 
 }

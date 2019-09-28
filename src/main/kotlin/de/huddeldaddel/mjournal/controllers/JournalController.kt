@@ -16,7 +16,6 @@ class JournalController {
 
     @RequestMapping(value = ["/home"], method = [RequestMethod.GET])
     protected fun home(model: MutableMap<String, Any>, req: HttpServletRequest): String {
-        logger.info("Home page")
         val accessToken = SessionUtils.get(req, "accessToken") as String?
         val idToken = SessionUtils.get(req, "idToken") as String?
         if (accessToken != null) {
