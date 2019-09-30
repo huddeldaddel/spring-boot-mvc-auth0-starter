@@ -3,7 +3,7 @@
 
 ## Contents
 
-This project contains an extended setup for a web development project based on:
+This project template contains an extended setup for a web development project based on:
 
 *   Spring Boot
 *   Thymeleaf
@@ -11,7 +11,8 @@ This project contains an extended setup for a web development project based on:
 *   Maven
 
 The project already contains a working integration of Auth0 for secure user management and is prepared for easy 
-deployment on Heroku.  
+deployment on [Heroku](https://www.heroku.com). A sample configuration for an
+[Azure Build Pipeline](https://azure.microsoft.com/en-en/services/devops/pipelines/) is contained as well.
 
 ## Configuration
 
@@ -20,8 +21,6 @@ The configuration is split in multiple parts.
 *   `application.properties` contains common properties that you'll rarely change.
 *   `application-production.properties` contains additional settings and maps them to environment variables. This is 
      useful for deployment on Heroku.
-*   `application-default.properties` is not part of the project. You can create this file based on 
-    `application-production.properties` and set you local development settings here.
 
 The following properties should be set:
 
