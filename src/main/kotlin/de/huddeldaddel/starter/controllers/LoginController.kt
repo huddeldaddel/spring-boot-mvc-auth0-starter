@@ -1,4 +1,4 @@
-package de.huddeldaddel.mjournal.controllers
+package de.huddeldaddel.starter.controllers
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Controller

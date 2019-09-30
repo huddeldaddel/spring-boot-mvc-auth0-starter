@@ -1,4 +1,4 @@
-package de.huddeldaddel.mjournal
+package de.huddeldaddel.starter
 
 import org.springframework.boot.builder.SpringApplicationBuilder
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
@@ -6,7 +6,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 class ServletInitializer : SpringBootServletInitializer() {
 
 	override fun configure(application: SpringApplicationBuilder): SpringApplicationBuilder {
-		return application.sources(MJournalApplication::class.java)
+		return application.sources(StarterApplication::class.java)
 	}
 
 }

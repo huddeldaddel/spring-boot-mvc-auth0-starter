@@ -1,11 +1,11 @@
-package de.huddeldaddel.mjournal
+package de.huddeldaddel.starter
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class MJournalApplication
+class StarterApplication
 
 fun main(args: Array<String>) {
-	runApplication<MJournalApplication>(*args)
+	runApplication<StarterApplication>(*args)
 }

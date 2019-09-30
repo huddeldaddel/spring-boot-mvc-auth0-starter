@@ -1,4 +1,4 @@
-package de.huddeldaddel.mjournal.controllers
+package de.huddeldaddel.starter.controllers
 
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping

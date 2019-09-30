@@ -1,6 +1,6 @@
-package de.huddeldaddel.mjournal.controllers
+package de.huddeldaddel.starter.controllers
 
-import de.huddeldaddel.mjournal.configuration.Auth0Config
+import de.huddeldaddel.starter.configuration.Auth0Config
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping

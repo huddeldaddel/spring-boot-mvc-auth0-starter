@@ -1,4 +1,4 @@
-package de.huddeldaddel.mjournal.controllers
+package de.huddeldaddel.starter.controllers
 
 import com.auth0.SessionUtils
 import org.slf4j.LoggerFactory
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod
 import javax.servlet.http.HttpServletRequest
 
 @Controller
-@RequestMapping(value = ["/journal"])
-class JournalController {
+@RequestMapping(value = ["/protected"])
+class ProtectedController {
 
     private val logger = LoggerFactory.getLogger(this.javaClass)
 
@@ -23,7 +23,7 @@ class JournalController {
         } else if (idToken != null) {
             model["userId"] = idToken
         }
-        return "journal/home"
+        return "protected/home"
     }
 
 }

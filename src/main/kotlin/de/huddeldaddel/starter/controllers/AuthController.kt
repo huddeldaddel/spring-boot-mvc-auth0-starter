@@ -1,8 +1,8 @@
-package de.huddeldaddel.mjournal.controllers
+package de.huddeldaddel.starter.controllers
 
 import com.auth0.IdentityVerificationException
 import com.auth0.Tokens
-import de.huddeldaddel.mjournal.configuration.Auth0Config
+import de.huddeldaddel.starter.configuration.Auth0Config
 import org.springframework.stereotype.Component
 
 import javax.servlet.http.HttpServletRequest

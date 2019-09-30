@@ -1,11 +1,10 @@
-package de.huddeldaddel.mjournal.configuration
+package de.huddeldaddel.starter.configuration
 
 import com.auth0.SessionUtils
-
+import java.io.IOException
 import javax.servlet.*
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
-import java.io.IOException
 
 class Auth0Filter : Filter {
 

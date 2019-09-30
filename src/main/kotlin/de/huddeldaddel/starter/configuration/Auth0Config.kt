@@ -1,4 +1,4 @@
-package de.huddeldaddel.mjournal.configuration
+package de.huddeldaddel.starter.configuration
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.web.servlet.FilterRegistrationBean
@@ -23,7 +23,7 @@ class Auth0Config(
     fun filterRegistration(): FilterRegistrationBean<*> {
         val registration: FilterRegistrationBean<Auth0Filter> = FilterRegistrationBean()
         registration.filter = Auth0Filter()
-        registration.addUrlPatterns("/journal/*")
+        registration.addUrlPatterns("/protected/*")
         registration.setName(Auth0Filter::class.java.simpleName)
         return registration
     }

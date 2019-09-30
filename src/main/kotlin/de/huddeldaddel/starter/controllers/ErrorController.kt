@@ -1,4 +1,4 @@
-package de.huddeldaddel.mjournal.controllers
+package de.huddeldaddel.starter.controllers
 
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Controller
