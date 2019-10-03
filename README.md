@@ -21,7 +21,7 @@ Starting your project based on this template and getting it running on Heroku wi
    ![Use the template](documentation/01-use-template.png)
 2. You can now enter the data for your new project repository. Click "Create repository from template" to finish the process.
    ![Enter repository data](documentation/02-create-new-repository.png)
-3. Head over to [Heroku](https://heroku.com) and sign up / login. Now create a new app. Pick a good name for it - it will later be part of your URL.
+3. Head over to [Heroku](https://heroku.com) and sign up / login. Now create a new app. Pick a good name for it - it will later be part of your URL.  
    ![Create an app on Heroku](documentation/03-create-heroku-app.png)
 4. Now connect your app to your repository on Github. 
    ![Connect the app to your Github repository](documentation/04-connect-github.png)
@@ -37,9 +37,8 @@ Starting your project based on this template and getting it running on Heroku wi
 8. Clone your repository and open it in an editor of your choice. Open 
    `src\main\resources\application-production.properties`. Change the value for `com.auth0.callback`
    to be the domain of your app (see last step) ending with `/callback`. Now commit and push your changes.
-9. Now head over to [Auth0](https://auth0.com) and create a new app for your project.
-   ![Create app on Auth0](documentation/11-create-auth0-app.png).  
-   Pick a name and select "Regular Web Application" as type.
+9. Now head over to [Auth0](https://auth0.com) and create a new app for your project. Pick a name and select "Regular Web Application" as type.  
+   ![Create app on Auth0](documentation/11-create-auth0-app.png).
 10. Configure the URLs that are allowed for callbacks. During development 
     `http://localhost:3000/callback` will be used. The callback of your app on Heroku will use the
     value you have configured as `com.auth0.callback`.
@@ -50,15 +49,15 @@ Starting your project based on this template and getting it running on Heroku wi
     and reveal the config vars.
 13. Update the configuration. Add the three settings that start with `AUTH0` and set the values 
     that you found in the last step.
-    ![Update the configuration](documentation/17-configure-config-vars-2.png).
+    ![Update the configuration](documentation/17-configure-config-vars-2.png)
 14. Finally - you've made it! Yeah! Go to the Deploy tab on Heroku and start a deployment of the
     master branch manually. Once the application has been compiled the success notification will be shown. Click on "View" to open your application in the browser.
-    ![Success](documentation/19-success.png).
+    ![Success](documentation/19-success.png)
 15. Your browser now displays the (unprotected) success page. To test the Auth0 integration just
-    navigate to `/protected/home`.
-    ![Success](documentation/20-protected-url.png).  
-    You should be redirected to Auth0. Use the dialog to sign-up for a new account. Once you're done you'll be forwarded to the protected section of your application.
-    ![Success](documentation/21-finished.png).
+    navigate to `/protected/home`.  
+    ![Success](documentation/20-protected-url.png)  
+    You should be redirected to Auth0. Use the dialog to sign-up for a new account. Once you're done you'll be forwarded to the protected section of your application.  
+    ![Success](documentation/21-finished.png)
 
 ## Getting started locally
 
