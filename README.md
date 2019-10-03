@@ -1,6 +1,6 @@
 # Spring-Boot-MVC-Auth0-Starter
 
-[![Build Status](https://dev.azure.com/huddeldaddel/huddeldaddel/_apis/build/status/huddeldaddel.mobbing-journal?branchName=master)](https://dev.azure.com/huddeldaddel/huddeldaddel/_build/latest?definitionId=4&branchName=master) 
+[![Build Status](https://dev.azure.com/huddeldaddel/huddeldaddel/_apis/build/status/huddeldaddel.spring-boot-mvc-auth0-starter?branchName=master)](https://dev.azure.com/huddeldaddel/huddeldaddel/_build/latest?definitionId=5&branchName=master)
 
 ## Contents
 
